@@ -1,0 +1,14 @@
+[auth]
+enabled = true
+providers = ["email"]
+
+[ai]
+required = true
+description = "AI CORAL chat and analysis. Connect a supported AI provider in project Setup."
+
+[[config]]
+name = "default_model"
+type = "select"
+label = "Default AI model"
+options = [{ value = "gpt", label = "GPT" }, { value = "gpt-mini", label = "GPT Mini" }, { value = "gemini", label = "Gemini Flash" }, { value = "gemini-pro", label = "Gemini Pro" }, { value = "sonnet", label = "Claude Sonnet" }]
+default = "gemini"
